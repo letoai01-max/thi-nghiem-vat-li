@@ -1,0 +1,459 @@
+{
+ "phien_ban": 1,
+ "ma_bai": "bai_11",
+ "mo_hinh": "roi_tu_do_tru_thep",
+ "ten_bai": "Bài 11. Thực hành: Đo gia tốc rơi tự do",
+ "nguon": "SGK Vật lí 10 – Kết nối tri thức với cuộc sống, tr. 47–48 (kèm Bài 3 về sai số, Bài 10 về rơi tự do)",
+ "loai": "thuc_hanh",
+ "muc_tieu": [
+  {
+   "id": "mt1",
+   "noi_dung": "Thiết kế phương án đo gia tốc rơi tự do bằng đồng hồ đo thời gian hiện số và cổng quang điện."
+  },
+  {
+   "id": "mt2",
+   "noi_dung": "Thu thập số liệu s, t nhiều lần; tính g và sai số."
+  },
+  {
+   "id": "mt3",
+   "noi_dung": "Vẽ đồ thị s–t², rút ra tính chất của chuyển động rơi tự do và biện luận sai số."
+  }
+ ],
+ "pha": [
+  {
+   "id": "vao_lab",
+   "ten": "Kiểm tra điều kiện vào lab",
+   "dieu_kien": [
+    "cau_vao_dat"
+   ]
+  },
+  {
+   "id": "chon_dung_cu_lap_rap",
+   "ten": "Chọn dụng cụ và lắp ráp",
+   "dieu_kien": [
+    "khai_bao:du_doan",
+    "khai_bao:bien_so",
+    "khai_bao:phuong_an",
+    "dung_cu_da_chon",
+    "lap_rap_dat"
+   ]
+  },
+  {
+   "id": "do_nhieu_lan",
+   "ten": "Đo đạc nhiều lần",
+   "dieu_kien": [
+    "do_du_lan"
+   ]
+  },
+  {
+   "id": "xu_ly_ket_luan",
+   "ten": "Xử lí số liệu và kết luận",
+   "dieu_kien": [
+    "ket_qua_dat",
+    "ket_luan_dat"
+   ]
+  }
+ ],
+ "cau_vao": [
+  {
+   "id": "v1",
+   "cau_hoi": "Rơi tự do là chuyển động như thế nào? Công thức quãng đường theo thời gian (vận tốc đầu bằng 0) là gì?",
+   "nhom_tu_khoa": [
+    [
+     "nhanh dan deu",
+     "thang nhanh dan"
+    ],
+    [
+     "1/2",
+     "0,5",
+     "gt^2",
+     "gt2",
+     "g.t",
+     "binh phuong"
+    ]
+   ]
+  },
+  {
+   "id": "v2",
+   "cau_hoi": "Vì sao phải đo thời gian nhiều lần ở cùng một vị trí và nhiều vị trí khác nhau?",
+   "nhom_tu_khoa": [
+    [
+     "ngau nhien",
+     "sai so",
+     "trung binh"
+    ],
+    [
+     "do thi",
+     "nhieu vi tri",
+     "khac nhau",
+     "quy luat"
+    ]
+   ]
+  },
+  {
+   "id": "v3",
+   "cau_hoi": "Khi cắm nam châm điện và cổng quang vào đồng hồ, cần chú ý điều gì để an toàn và đúng ổ cắm?",
+   "nhom_tu_khoa": [
+    [
+     "o a",
+     "o b",
+     "khe dinh vi",
+     "thang",
+     "khong manh",
+     "khong lac"
+    ]
+   ]
+  }
+ ],
+ "an_toan": [
+  "Cắm giắc cổng quang thẳng vào ổ A/B, xoay đúng khe định vị; không cắm mạnh, không lắc chân cắm (SGK tr. 32).",
+  "Kết thúc thí nghiệm: tắt nguồn đồng hồ, tháo dụng cụ, sắp xếp ngăn nắp (SGK tr. 33)."
+ ],
+ "khai_bao": {
+  "du_doan": {
+   "cau_hoi": "Em dự đoán: nếu tăng khoảng cách s từ nam châm đến cổng quang lên gấp đôi thì thời gian rơi t tăng gấp mấy lần (gấp đôi, gấp bốn, hay khác)? Đồ thị s theo t có dạng gì? Giải thích."
+  },
+  "bien_so": {
+   "cau_hoi": "Nêu: đại lượng đo trực tiếp, đại lượng tính gián tiếp, đại lượng em thay đổi và những yếu tố em phải giữ nguyên."
+  },
+  "phuong_an": {
+   "cau_hoi": "Mô tả phương án: dụng cụ nào đo s, dụng cụ nào đo t, đồng hồ ở MODE nào, đo mấy vị trí s và mỗi vị trí mấy lần."
+  }
+ },
+ "do_dai_toi_thieu_tu": 8,
+ "dung_cu": {
+  "mc964": {
+   "ten": "Đồng hồ đo thời gian hiện số MC964 + cổng quang điện",
+   "loai": "do_thoi_gian",
+   "loai_do": "cong_quang",
+   "thang_do": {
+    "9.999": {
+     "do_chia_s": 0.001,
+     "toi_da_s": 9.999
+    },
+    "99.99": {
+     "do_chia_s": 0.01,
+     "toi_da_s": 99.99
+    }
+   },
+   "sigma_s": 0.0004
+  },
+  "dong_ho_bam_tay": {
+   "ten": "Đồng hồ bấm giây cầm tay",
+   "loai": "do_thoi_gian",
+   "loai_do": "tay",
+   "thang_do": {
+    "99.99": {
+     "do_chia_s": 0.01,
+     "toi_da_s": 99.99
+    }
+   },
+   "sigma_s": 0.15,
+   "ghi_chu_khi_chon": "Độ chia 0,01 s nhưng sai số thực tế bị chi phối bởi phản xạ của người bấm (cỡ vài phần mười giây)."
+  },
+  "thuoc_mm": {
+   "ten": "Thước thẳng ĐCNN 1 mm",
+   "loai": "do_chieu_dai",
+   "do_chia_m": 0.001,
+   "sigma_m": 0.0003,
+   "toi_da_m": 1.0
+  },
+  "thuoc_day_mem": {
+   "ten": "Thước dây mềm ĐCNN 5 mm",
+   "loai": "do_chieu_dai",
+   "do_chia_m": 0.005,
+   "sigma_m": 0.002,
+   "toi_da_m": 2.0,
+   "ghi_chu_khi_chon": "Thước dây mềm dễ võng, độ chia lớn: sai số khi đo đoạn ngắn sẽ đáng kể."
+  },
+  "thuoc_cap": {
+   "ten": "Thước cặp ĐCNN 0,02 mm",
+   "loai": "do_chieu_dai",
+   "do_chia_m": 2e-05,
+   "sigma_m": 1e-05,
+   "toi_da_m": 0.15
+  },
+  "can_dia": {
+   "ten": "Cân đĩa",
+   "loai": "khong_lien_quan",
+   "ghi_chu_khi_chon": "Cân đo khối lượng; đại lượng cần đo trong bài này là thời gian và độ dài."
+  },
+  "nhiet_ke": {
+   "ten": "Nhiệt kế",
+   "loai": "khong_lien_quan",
+   "ghi_chu_khi_chon": "Nhiệt kế không liên quan tới đại lượng cần đo trong bài này."
+  }
+ },
+ "dung_cu_can_co": {
+  "do_thoi_gian": 1,
+  "do_chieu_dai": 1
+ },
+ "tham_so_that": {
+  "g_that_m_s2": 9.78,
+  "do_tre_nam_cham_s": [
+   0.0008,
+   0.002
+  ],
+  "lech_thuoc_m": [
+   0.0,
+   0.003
+  ],
+  "chieu_dai_mang_m": 0.9,
+  "chieu_dai_tru_m": 0.04,
+  "sai_so_dat_cong_m": 0.0005,
+  "he_so_nhieu_vien_bi": 8.0,
+  "xac_suat_truot_cong_vien_bi": 0.3
+ },
+ "lap_rap": {
+  "buoc": [
+   {
+    "id": "bo_tri_may",
+    "mo_ta": "Đặt máng đứng lên giá đỡ, vặn chân đế cân bằng, vặn chặt vít hãm"
+   },
+   {
+    "id": "noi_nam_cham_cong_quang",
+    "mo_ta": "Cắm nam châm điện vào ổ A và cổng quang vào ổ B ở mặt sau đồng hồ"
+   },
+   {
+    "id": "cam_nguon_bat_cong_tac",
+    "mo_ta": "Cắm nguồn đồng hồ và bật công tắc"
+   },
+   {
+    "id": "dat_mode_thang_do",
+    "mo_ta": "Chọn MODE và thang đo phù hợp"
+   },
+   {
+    "id": "dat_cong_quang",
+    "mo_ta": "Đặt cổng quang ở vị trí s cần đo và vặn chặt"
+   },
+   {
+    "id": "dat_tru_vao_nam_cham",
+    "mo_ta": "Đặt trụ thép tiếp xúc với nam châm điện N"
+   },
+   {
+    "id": "nhan_reset",
+    "mo_ta": "Nhấn RESET để đưa số chỉ về 0.000"
+   }
+  ],
+  "bat_buoc": [
+   "bo_tri_may",
+   "noi_nam_cham_cong_quang",
+   "cam_nguon_bat_cong_tac",
+   "dat_mode_thang_do",
+   "dat_cong_quang",
+   "dat_tru_vao_nam_cham"
+  ],
+  "thu_tu": [
+   [
+    "noi_nam_cham_cong_quang",
+    "cam_nguon_bat_cong_tac"
+   ],
+   [
+    "cam_nguon_bat_cong_tac",
+    "dat_mode_thang_do"
+   ],
+   [
+    "dat_tru_vao_nam_cham",
+    "nhan_reset"
+   ]
+  ]
+ },
+ "yeu_cau_do": [
+  {
+   "thi_nghiem": "roi_tu_do",
+   "so_cau_hinh_toi_thieu": 4,
+   "so_lan_t_toi_thieu": 5,
+   "do_dai": {
+    "muc": "quang_duong",
+    "so_lan_toi_thieu": 3
+   }
+  }
+ ],
+ "goi_y": {
+  "phuong_an_do_g": [
+   "Rơi tự do là chuyển động thẳng nhanh dần đều, vận tốc đầu bằng 0. Từ công thức quãng đường theo thời gian, em suy ra g thế nào nếu đo được s và t?",
+   "Cần đo s (từ vị trí vật chạm nam châm đến cổng quang) và thời gian rơi t. Đồng hồ ở chế độ nào để bắt đầu đếm khi nam châm nhả và dừng khi vật chắn cổng? Nên đo ở nhiều giá trị s.",
+   "Ví dụ: trên một hành tinh khác, vật rơi từ nghỉ được 20 m hết 2,0 s thì g = ? Hãy áp dụng cùng cách làm cho số liệu của em."
+  ],
+  "do_thi": [
+   "Muốn kiểm chứng chuyển động rơi tự do là nhanh dần đều, nên vẽ s theo đại lượng nào để được đường thẳng?",
+   "Từ s = ½ g t², nếu lấy t² làm trục hoành thì đồ thị s–t² có dạng gì, hệ số góc liên hệ với g ra sao? Đồ thị của em có đi qua gốc toạ độ không?",
+   "Ví dụ: số liệu y = 3x cho đồ thị y–x thẳng qua gốc, hệ số góc 3. Với y = ½kX² thì vẽ y theo X² được hệ số góc ½k. Hãy áp dụng cho s và t."
+  ],
+  "nguon_sai_so": [
+   "Nhớ lại Bài 3: trong thí nghiệm này, nguồn sai số nào lặp lại giống nhau mỗi lần (hệ thống), nguồn nào mỗi lần một khác (ngẫu nhiên)?",
+   "Xét: độ chia của thước và đồng hồ; cách xác định s từ đáy trụ đến tia cổng quang; thời điểm nam châm nhả vật; việc đặt cổng quang. Khâu nào có thể làm mọi số đo lệch cùng một hướng?",
+   "Ví dụ: cân luôn lệch +0,2 g thì mọi số cân đều lớn hơn thật 0,2 g dù cân nhiều lần; đó là sai số hệ thống. Hãy tìm một khâu tương tự trong thí nghiệm rơi tự do."
+  ],
+  "xu_ly_so_lieu": [
+   "Với mỗi vị trí s, tính t trung bình rồi suy ra g; hoặc dùng đồ thị. Sai số theo (3.1), (3.2) tr. 18.",
+   "Các bước: (1) t̄ ở mỗi s; (2) g = 2s/t̄²; (3) trung bình các g; (4) sai số tuyệt đối trung bình của g, cộng sai số dụng cụ nếu cần; (5) ghi g = ḡ ± Δg.",
+   "Ví dụ: ba giá trị g đo được 9,6; 9,9; 9,7 m/s²: trung bình 9,73; |lệch| = 0,13; 0,17; 0,03 → trung bình 0,11 → ghi g = 9,7 ± 0,1 m/s². Em làm tương tự."
+  ]
+ },
+ "danh_gia_ket_qua": {
+  "dung_sai_phan_tram": 4.0,
+  "loai": {
+   "g_tb": "g trung bình = trung bình của 2 s_i / t̄_i² qua các vị trí"
+  }
+ },
+ "ket_luan": [
+  {
+   "id": "y1",
+   "nhom_tu_khoa": [
+    [
+     "thang",
+     "duong thang",
+     "ti le"
+    ]
+   ],
+   "cau_hoi_dan_dat": "Nhìn đồ thị s–t² của em, các điểm gần nằm trên đường nào? Điều đó nói gì về mối quan hệ giữa s và t²?"
+  },
+  {
+   "id": "y2",
+   "nhom_tu_khoa": [
+    [
+     "nhanh dan deu"
+    ],
+    [
+     "he so goc",
+     "g",
+     "2"
+    ]
+   ],
+   "cau_hoi_dan_dat": "Từ hệ số góc của đồ thị, em rút ra gia tốc rơi tự do bằng bao nhiêu và tính chất của chuyển động là gì?"
+  },
+  {
+   "id": "y3",
+   "nhom_tu_khoa": [
+    [
+     "sai so"
+    ],
+    [
+     "he thong",
+     "do tre",
+     "nam cham",
+     "goc toa do",
+     "thuoc",
+     "do chia"
+    ]
+   ],
+   "cau_hoi_dan_dat": "Đồ thị của em có đi qua gốc toạ độ hoàn toàn không? Theo em, vì sao lại (không) như vậy?"
+  }
+ ],
+ "phan_bien": [
+  "Vì sao dùng trụ thép làm vật rơi? Có thể dùng viên bi thép được không? Giải thích.",
+  "Vẽ đồ thị s–t² và nhận xét dạng đồ thị; từ đó kết luận về tính chất chuyển động rơi tự do.",
+  "Đề xuất một phương án thí nghiệm khác để đo gia tốc rơi tự do (SGK gợi ý: con lắc đơn, phân tích video)."
+ ],
+ "du_phong": {
+  "cau_hinh": [
+   {
+    "thi_nghiem": "roi_tu_do",
+    "cau_hinh": {
+     "vat": "tru_thep",
+     "s_dat_m": 0.2,
+     "mode": "A->B",
+     "thang_do": "9.999",
+     "da_reset": true,
+     "dong_ho": "mc964"
+    },
+    "so_lan": 5
+   },
+   {
+    "thi_nghiem": "roi_tu_do",
+    "cau_hinh": {
+     "vat": "tru_thep",
+     "s_dat_m": 0.3,
+     "mode": "A->B",
+     "thang_do": "9.999",
+     "da_reset": true,
+     "dong_ho": "mc964"
+    },
+    "so_lan": 5
+   },
+   {
+    "thi_nghiem": "roi_tu_do",
+    "cau_hinh": {
+     "vat": "tru_thep",
+     "s_dat_m": 0.4,
+     "mode": "A->B",
+     "thang_do": "9.999",
+     "da_reset": true,
+     "dong_ho": "mc964"
+    },
+    "so_lan": 5
+   },
+   {
+    "thi_nghiem": "roi_tu_do",
+    "cau_hinh": {
+     "vat": "tru_thep",
+     "s_dat_m": 0.5,
+     "mode": "A->B",
+     "thang_do": "9.999",
+     "da_reset": true,
+     "dong_ho": "mc964"
+    },
+    "so_lan": 5
+   },
+   {
+    "thi_nghiem": "roi_tu_do",
+    "cau_hinh": {
+     "vat": "tru_thep",
+     "s_dat_m": 0.6,
+     "mode": "A->B",
+     "thang_do": "9.999",
+     "da_reset": true,
+     "dong_ho": "mc964"
+    },
+    "so_lan": 5
+   }
+  ],
+  "do_chieu_dai": [
+   {
+    "muc": "quang_duong",
+    "dung_cu": "thuoc_mm",
+    "cau_hinh_idx": 0,
+    "so_lan": 3
+   },
+   {
+    "muc": "quang_duong",
+    "dung_cu": "thuoc_mm",
+    "cau_hinh_idx": 1,
+    "so_lan": 3
+   },
+   {
+    "muc": "quang_duong",
+    "dung_cu": "thuoc_mm",
+    "cau_hinh_idx": 2,
+    "so_lan": 3
+   },
+   {
+    "muc": "quang_duong",
+    "dung_cu": "thuoc_mm",
+    "cau_hinh_idx": 3,
+    "so_lan": 3
+   },
+   {
+    "muc": "quang_duong",
+    "dung_cu": "thuoc_mm",
+    "cau_hinh_idx": 4,
+    "so_lan": 3
+   }
+  ]
+ },
+ "ghi_chu_gia_dinh": [
+  "g_thật = 9,78 m/s², độ trễ nam châm 0,8–2,0 ms, lệch thước 0–3 mm, chiều dài máng 0,90 m: giả định mô hình, cần đối chiếu bộ thật.",
+  "Theo tài liệu tổng hợp 20/11: ít nhất 4 quãng đường s (ví dụ 0,2; 0,4; 0,6; 0,8 m), mỗi quãng đo 5 lần. Bản trước đặt 5 vị trí × 3 lần theo ước đoán từ SGK."
+ ],
+ "gia_thiet": [
+  "Bi thép rơi tự do, thả không vận tốc đầu, coi như chất điểm.",
+  "Bỏ qua sức cản không khí; gia tốc rơi tự do coi là không đổi trên đoạn rơi.",
+  "Vị trí cổng quang tính từ chỗ thả theo cách mô hình quy ước."
+ ],
+ "gioi_han_mo_hinh": [
+  "Chưa mô phỏng sức cản không khí, bi xoay hay lệch quỹ đạo.",
+  "Có mô hình độ trễ nam châm, sai số đặt cổng và độ phân giải thang đo; các sai số khác chưa mô phỏng.",
+  "Số liệu là kết quả mô phỏng, không thay thế phép đo trên bộ thiết bị thật."
+ ]
+}

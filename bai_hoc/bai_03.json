@@ -1,0 +1,362 @@
+{
+ "phien_ban": 1,
+ "ma_bai": "bai_03",
+ "mo_hinh": "xe_do_choi",
+ "ten_bai": "Bài 3. Thực hành: Tính sai số trong phép đo. Ghi kết quả đo",
+ "nguon": "SGK Vật lí 10 – Kết nối tri thức với cuộc sống, Bài 3; Tài liệu tổng hợp thí nghiệm 20/11/2026",
+ "loai": "thuc_hanh",
+ "muc_tieu": [
+  {
+   "id": "mt1",
+   "noi_dung": "Đo quãng đường s và thời gian t của xe đồ chơi chạy pin, mỗi đại lượng 5 lần, để xác định tốc độ v = s/t."
+  },
+  {
+   "id": "mt2",
+   "noi_dung": "Tính sai số ngẫu nhiên, sai số dụng cụ (ĐCNN/2), sai số tuyệt đối và sai số tỉ đối của phép đo trực tiếp và gián tiếp."
+  },
+  {
+   "id": "mt3",
+   "noi_dung": "Ghi đúng kết quả v = v̄ ± Δv và chỉ ra nguồn sai số chính của phép đo."
+  }
+ ],
+ "pha": [
+  {
+   "id": "vao_lab",
+   "ten": "Kiểm tra điều kiện vào lab",
+   "dieu_kien": [
+    "cau_vao_dat"
+   ]
+  },
+  {
+   "id": "chon_dung_cu_lap_rap",
+   "ten": "Chọn dụng cụ và lắp ráp",
+   "dieu_kien": [
+    "khai_bao:du_doan",
+    "khai_bao:bien_so",
+    "khai_bao:phuong_an",
+    "dung_cu_da_chon",
+    "lap_rap_dat"
+   ]
+  },
+  {
+   "id": "do_nhieu_lan",
+   "ten": "Đo đạc nhiều lần",
+   "dieu_kien": [
+    "do_du_lan"
+   ]
+  },
+  {
+   "id": "xu_ly_ket_luan",
+   "ten": "Xử lí số liệu và kết luận",
+   "dieu_kien": [
+    "ket_qua_dat",
+    "ket_luan_dat"
+   ]
+  }
+ ],
+ "cau_vao": [
+  {
+   "id": "v1",
+   "cau_hoi": "Phân biệt sai số hệ thống và sai số ngẫu nhiên. Cho một ví dụ cho mỗi loại.",
+   "nhom_tu_khoa": [
+    [
+     "he thong"
+    ],
+    [
+     "ngau nhien"
+    ]
+   ]
+  },
+  {
+   "id": "v2",
+   "cau_hoi": "Sai số tuyệt đối của một đại lượng đo trực tiếp nhiều lần gồm những thành phần nào? Sai số dụng cụ lấy bằng bao nhiêu?",
+   "nhom_tu_khoa": [
+    [
+     "trung binh",
+     "ngau nhien"
+    ],
+    [
+     "dcnn",
+     "do chia nho nhat",
+     "1/2",
+     "mot nua",
+     "/2"
+    ]
+   ]
+  },
+  {
+   "id": "v3",
+   "cau_hoi": "Với v = s/t, sai số tỉ đối của v được tính từ sai số tỉ đối của s và t như thế nào?",
+   "nhom_tu_khoa": [
+    [
+     "tong"
+    ],
+    [
+     "ti doi",
+     "phan tram",
+     "δ",
+     "delta"
+    ]
+   ]
+  }
+ ],
+ "an_toan": [
+  "Đặt xe chạy trên mặt phẳng ngang, có chắn ở cuối đường chạy để xe không rơi khỏi bàn.",
+  "Kết thúc thí nghiệm: tắt công tắc xe, tháo pin nếu không dùng, sắp xếp dụng cụ ngăn nắp."
+ ],
+ "khai_bao": {
+  "du_doan": {
+   "cau_hoi": "Em dự đoán: nếu đo thời gian t nhiều lần bằng đồng hồ bấm tay thì các số đo sẽ giống nhau hay khác nhau? Vì sao? Đo s bằng thước thì sao?"
+  },
+  "bien_so": {
+   "cau_hoi": "Nêu: đại lượng đo trực tiếp, đại lượng tính gián tiếp, và những yếu tố em phải giữ nguyên giữa các lần đo."
+  },
+  "phuong_an": {
+   "cau_hoi": "Mô tả phương án: dụng cụ nào đo s, dụng cụ nào đo t, chọn quãng đường s bao nhiêu và vì sao, đo mỗi đại lượng mấy lần."
+  }
+ },
+ "do_dai_toi_thieu_tu": 8,
+ "dung_cu": {
+  "dong_ho_bam_giay": {
+   "ten": "Đồng hồ bấm giây kĩ thuật số ĐCNN 0,01 s",
+   "loai": "do_thoi_gian",
+   "loai_do": "tay",
+   "thang_do": {
+    "99.99": {
+     "do_chia_s": 0.01,
+     "toi_da_s": 99.99
+    }
+   },
+   "sigma_s": 0.1,
+   "ghi_chu_khi_chon": "Độ chia 0,01 s nhưng sai số thực tế bị chi phối bởi phản xạ của người bấm (cỡ một phần mười giây)."
+  },
+  "dong_ho_kim": {
+   "ten": "Đồng hồ kim bấm giây ĐCNN 0,2 s",
+   "loai": "do_thoi_gian",
+   "loai_do": "tay",
+   "thang_do": {
+    "59.8": {
+     "do_chia_s": 0.2,
+     "toi_da_s": 59.8
+    }
+   },
+   "sigma_s": 0.18,
+   "ghi_chu_khi_chon": "Độ chia 0,2 s thô hơn đồng hồ kĩ thuật số; sai số dụng cụ lớn."
+  },
+  "thuoc_cuon": {
+   "ten": "Thước cuộn 2 m ĐCNN 1 mm",
+   "loai": "do_chieu_dai",
+   "do_chia_m": 0.001,
+   "sigma_m": 0.0008,
+   "toi_da_m": 2.0
+  },
+  "thuoc_day_mem": {
+   "ten": "Thước dây mềm ĐCNN 5 mm",
+   "loai": "do_chieu_dai",
+   "do_chia_m": 0.005,
+   "sigma_m": 0.002,
+   "toi_da_m": 2.0,
+   "ghi_chu_khi_chon": "Thước dây mềm dễ võng, độ chia lớn: sai số dụng cụ đáng kể."
+  },
+  "thuoc_cap": {
+   "ten": "Thước cặp ĐCNN 0,02 mm",
+   "loai": "do_chieu_dai",
+   "do_chia_m": 2e-05,
+   "sigma_m": 1e-05,
+   "toi_da_m": 0.15,
+   "ghi_chu_khi_chon": "Thước cặp chỉ đo được tối đa 0,15 m, không đo được quãng đường chạy của xe."
+  },
+  "can_dien_tu": {
+   "ten": "Cân điện tử",
+   "loai": "khong_lien_quan",
+   "ghi_chu_khi_chon": "Đại lượng cần đo trong bài này là độ dài và thời gian, không phải khối lượng."
+  },
+  "nhiet_ke": {
+   "ten": "Nhiệt kế",
+   "loai": "khong_lien_quan",
+   "ghi_chu_khi_chon": "Nhiệt kế không liên quan tới các đại lượng cần đo trong bài này."
+  }
+ },
+ "dung_cu_can_co": {
+  "do_thoi_gian": 1,
+  "do_chieu_dai": 1
+ },
+ "tham_so_that": {
+  "toc_do_xe_m_s": [
+   0.3,
+   0.45
+  ],
+  "lech_bam_tay_s": [
+   0.0,
+   0.05
+  ],
+  "lech_thuoc_m": [
+   0.0,
+   0.002
+  ],
+  "duong_chay_toi_da_m": 2.0
+ },
+ "lap_rap": {
+  "buoc": [
+   {
+    "id": "dat_mat_phang",
+    "mo_ta": "Đặt đường chạy thẳng trên mặt phẳng ngang, nhẵn, có chắn ở cuối"
+   },
+   {
+    "id": "danh_dau_vach",
+    "mo_ta": "Đánh dấu vạch xuất phát và vạch đích cách nhau quãng đường s"
+   },
+   {
+    "id": "kiem_tra_xe",
+    "mo_ta": "Bật công tắc, cho xe chạy thử, kiểm tra xe chạy thẳng và pin ổn định"
+   },
+   {
+    "id": "dat_dong_ho_ve_0",
+    "mo_ta": "Bật đồng hồ bấm giây và đưa số chỉ về 0,00"
+   }
+  ],
+  "bat_buoc": [
+   "dat_mat_phang",
+   "danh_dau_vach",
+   "kiem_tra_xe"
+  ],
+  "thu_tu": [
+   [
+    "dat_mat_phang",
+    "danh_dau_vach"
+   ],
+   [
+    "danh_dau_vach",
+    "kiem_tra_xe"
+   ]
+  ]
+ },
+ "yeu_cau_do": [
+  {
+   "thi_nghiem": "xe_do_choi",
+   "so_cau_hinh_toi_thieu": 1,
+   "so_lan_t_toi_thieu": 5,
+   "do_dai": {
+    "muc": "quang_duong",
+    "so_lan_toi_thieu": 5
+   }
+  }
+ ],
+ "goi_y": {
+  "phuong_an_do_v": [
+   "Muốn biết xe chạy nhanh bao nhiêu thì cần đo những đại lượng nào, và công thức nào nối chúng với tốc độ?",
+   "Cần quãng đường s giữa hai vạch và thời gian t xe đi hết quãng đó. Chọn s quá ngắn thì thời gian chỉ vài giây, bấm tay sẽ ảnh hưởng ra sao đến sai số tỉ đối của t?",
+   "Ví dụ: một vận động viên chạy 100 m hết 12,5 s thì v = ? Hãy áp dụng cùng cách làm cho s̄ và t̄ của em."
+  ],
+  "sai_so_ngau_nhien": [
+   "Nhìn các lần đo t của em: chúng có bằng nhau không? Điều gì khiến chúng khác nhau?",
+   "Theo Bài 3: tính trung bình t̄, rồi sai số ngẫu nhiên của từng lần |t̄ − tᵢ|, rồi lấy trung bình các sai số ấy. Sai số dụng cụ bằng bao nhiêu phần của ĐCNN?",
+   "Ví dụ: đo 3 lần được 2,0; 2,2; 1,8 s thì t̄ = 2,0 s, sai số ngẫu nhiên các lần là 0; 0,2; 0,2, trung bình 0,13 s. Hãy làm tương tự cho số liệu của em."
+  ],
+  "sai_so_gian_tiep": [
+   "v được tính từ s và t. Sai số của s và của t đều ảnh hưởng đến sai số của v; chúng kết hợp với nhau theo quy tắc nào?",
+   "Với phép chia, sai số tỉ đối của kết quả bằng tổng sai số tỉ đối của các đại lượng thành phần: δv = δs + δt. Sau đó Δv = δv · v̄.",
+   "Ví dụ: δs = 0,2% và δt = 4% thì δv = 4,2%; nếu v̄ = 0,40 m/s thì Δv ≈ 0,017 m/s. Hãy áp dụng cho số liệu của em."
+  ],
+  "ghi_ket_qua": [
+   "Kết quả đo phải ghi kèm gì để người khác biết độ tin cậy của nó?",
+   "Ghi v = v̄ ± Δv; sai số tuyệt đối thường giữ một hai chữ số có nghĩa và v̄ làm tròn cùng chữ số thập phân với Δv.",
+   "Ví dụ: v̄ = 0,4036 m/s, Δv = 0,0172 m/s thì ghi v = 0,40 ± 0,02 m/s. Hãy ghi kết quả của em theo cách đó."
+  ]
+ },
+ "danh_gia_ket_qua": {
+  "dung_sai_phan_tram": 4.0,
+  "dung_sai_theo_loai": {
+   "dv": 12.0
+  },
+  "loai": {
+   "v_xe": "Tốc độ trung bình v̄ = s̄ / t̄",
+   "dv": "Sai số tuyệt đối Δv = (Δs/s̄ + Δt/t̄) · v̄"
+  }
+ },
+ "ket_luan": [
+  {
+   "id": "y1",
+   "nhom_tu_khoa": [
+    [
+     "bam tay",
+     "phan xa",
+     "ngau nhien",
+     "dong ho"
+    ]
+   ],
+   "cau_hoi_dan_dat": "Các lần đo t của em khác nhau chủ yếu vì lí do gì? Đó là sai số hệ thống hay ngẫu nhiên?"
+  },
+  {
+   "id": "y2",
+   "nhom_tu_khoa": [
+    [
+     "thoi gian",
+     "dong ho",
+     "t"
+    ],
+    [
+     "lon hon",
+     "chinh",
+     "chi phoi",
+     "nhieu nhat",
+     "lon"
+    ]
+   ],
+   "cau_hoi_dan_dat": "So sánh sai số tỉ đối của s và của t: đại lượng nào đóng góp nhiều hơn vào sai số của v?"
+  },
+  {
+   "id": "y3",
+   "nhom_tu_khoa": [
+    [
+     "sai so"
+    ],
+    [
+     "dcnn",
+     "chu so",
+     "lam tron",
+     "±",
+     "+-",
+     "ghi ket qua"
+    ]
+   ],
+   "cau_hoi_dan_dat": "Em ghi kết quả v̄ ± Δv như thế nào, và làm tròn theo quy tắc nào?"
+  }
+ ],
+ "phan_bien": [
+  "Muốn giảm sai số tỉ đối của t, em có thể thay đổi quãng đường s hay dụng cụ đo như thế nào?",
+  "Nếu dùng cổng quang điện thay cho bấm tay, nguồn sai số nào mất đi, nguồn nào còn lại?",
+  "Vì sao kết quả đo không thể ghi là một con số duy nhất không kèm sai số?"
+ ],
+ "du_phong": {
+  "cau_hinh": [
+   {
+    "thi_nghiem": "xe_do_choi",
+    "cau_hinh": {
+     "s_dat_m": 1.5,
+     "dong_ho": "dong_ho_bam_giay",
+     "thang_do": "99.99"
+    },
+    "so_lan": 5
+   }
+  ],
+  "do_chieu_dai": [
+   {
+    "muc": "quang_duong",
+    "dung_cu": "thuoc_cuon",
+    "cau_hinh_idx": 0,
+    "so_lan": 5
+   }
+  ]
+ },
+ "ghi_chu_gia_dinh": "Tham số thật là ước lượng hợp lí (tốc độ xe 0,30–0,45 m/s, nhiễu bấm tay 0,10 s); cần đối chiếu với xe và đồng hồ thật của trường.",
+ "gia_thiet": [
+  "Xe chạy thẳng với tốc độ gần không đổi, bỏ qua giai đoạn tăng tốc lúc xuất phát.",
+  "Nhiễu bấm tay mô hình hoá bằng phân bố chuẩn quanh một độ trễ hệ thống nhỏ.",
+  "Vạch xuất phát và vạch đích coi là xác định rõ."
+ ],
+ "gioi_han_mo_hinh": [
+  "Chưa mô phỏng xe lệch hướng, pin yếu dần hay ma sát thay đổi theo mặt bàn.",
+  "Số liệu là kết quả mô phỏng, không thay thế phép đo trên xe và đồng hồ thật."
+ ]
+}
