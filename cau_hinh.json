@@ -1,0 +1,18 @@
+{
+ "cong_tac": {
+  "CHE_DO_DU_PHONG": false,
+  "CHO_PHEP_SAI_SO_NGAU_NHIEN": true,
+  "GHI_NHAT_KY": true,
+  "HIEN_THI_LATEX": false
+ },
+ "so_lan_thu_truoc_goi_y": [
+  1,
+  2,
+  4
+ ],
+ "so_lan_xin_dap_an_goi_giao_vien": 3,
+ "dung_sai_nop_ket_qua_phan_tram": 4.0,
+ "do_dai_toi_thieu_tu": 8,
+ "so_cau_vao_phai_dat": 2,
+ "mui_gio": "UTC+7"
+}

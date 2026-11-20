@@ -1,0 +1,51 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Phòng thí nghiệm ảo Vật lí</title>
+<style>:root{--n:#fff;--c:#1a1a1a;--v:#e8eef7;--m:#1f5fbf}@media(prefers-color-scheme:dark){:root{--n:#16181d;--c:#e8e8e8;--v:#232833;--m:#6ea8ff}}
+body{font:16px/1.5 system-ui,sans-serif;background:var(--n);color:var(--c);max-width:780px;margin:0 auto;padding:12px}
+section{background:var(--v);border-radius:10px;padding:12px;margin:10px 0}label{display:block;margin:8px 0 2px;font-weight:600}
+input,select,textarea,button{font:inherit;padding:8px;border-radius:6px;border:1px solid #8889;background:var(--n);color:var(--c);width:100%;box-sizing:border-box}
+button{background:var(--m);color:#fff;border:0;margin-top:8px;cursor:pointer}button.p{background:#666}input[type=checkbox]{width:auto}
+pre{white-space:pre-wrap;overflow-x:auto;background:var(--n);padding:8px;border-radius:6px}</style></head><body>
+<h1>Phòng thí nghiệm ảo – Vật lí</h1><p><a href="kham_pha.html">→ 23 thí nghiệm khám phá (hoạt cảnh, đồ thị thời gian thực)</a></p><div id="tt">Đang tải Python trong trình duyệt (lần đầu mất vài chục giây)…</div>
+<section id="bd" hidden><label>Bài</label><select id="bai"><option value="bai_03">Bài 3 – Sai số, xe đồ chơi</option><option value="bai_06">Bài 6 – Đo tốc độ</option><option value="bai_11">Bài 11 – Đo gia tốc rơi tự do</option><option value="bai_22">Bài 22 – Tổng hợp lực</option><option value="bai_30">Bài 30 – Động lượng trước và sau va chạm</option></select>
+<label>Mã học sinh (ẩn danh, không dùng tên thật)</label><input id="hs" value="HS01"><button id="mo">Bắt đầu</button></section>
+<section id="lam" hidden><b id="tenbai"></b><label>Việc em muốn làm</label><select id="ct"></select><div id="ft"></div>
+<button id="chay">Thực hiện</button><button class="p" id="tthai">Xem em đang ở bước nào</button><button class="p" id="bang">Bảng số liệu của em</button><pre id="kq"></pre></section>
+<script src="https://cdn.jsdelivr.net/pyodide/v0.26.4/full/pyodide.js"></script>
+<script>
+const $=s=>document.getElementById(s);let py,CC=[];
+async function khoi(){
+ py=await loadPyodide({indexURL:"https://cdn.jsdelivr.net/pyodide/v0.26.4/full/"});
+ const ds=await (await fetch("manifest.json")).json();
+ for(const f of ds){const d=f.split("/").slice(0,-1).join("/");py.FS.mkdirTree("/app"+(d?"/"+d:""));
+  py.FS.writeFile("/app/"+f,new Uint8Array(await (await fetch(f)).arrayBuffer()));}
+ await py.runPythonAsync(`import sys,json
+sys.path.insert(0,"/app")
+from cong_cu import CONG_CU,thuc_thi
+from tien_trinh import PhienThucHanh,nap_bai
+P=None
+def mo(b,h):
+    global P
+    P=PhienThucHanh(nap_bai(b),h)
+    return P.bai["ten_bai"]
+def goi(t,j):
+    return json.dumps(thuc_thi(P,t,json.loads(j)),ensure_ascii=False)
+def ds():
+    return json.dumps(CONG_CU)`);
+ CC=JSON.parse(py.globals.get("ds")());
+ $("ct").innerHTML=CC.filter(c=>c.name!="bao_cao").map(c=>`<option value="${c.name}">${c.name}</option>`).join("");
+ ve();$("tt").hidden=true;$("bd").hidden=false;}
+function ve(){const c=CC.find(x=>x.name==$("ct").value),p=c.parameters.properties||{};
+ $("ft").innerHTML=`<p><small>${c.description}</small></p>`+Object.entries(p).map(([k,v])=>{
+  const kieu=v.type=="boolean"?`<input type=checkbox data-k="${k}" data-t="b">`:v.type=="object"?`<textarea data-k="${k}" data-t="o" rows=3 placeholder='{"khoa": "giá trị"}'></textarea>`:
+  v.type=="array"?`<input data-k="${k}" data-t="a" placeholder="các mục, cách nhau dấu phẩy">`:`<input data-k="${k}" data-t="${v.type=="number"?"n":"s"}">`;
+  return `<label>${k}</label>${kieu}`}).join("");}
+function thamSo(){const o={};document.querySelectorAll("#ft [data-k]").forEach(e=>{const t=e.dataset.t,v=e.value;
+ if(t=="b")o[e.dataset.k]=e.checked;else if(v!==""){o[e.dataset.k]=t=="n"?Number(v.replace(",",".")):t=="a"?v.split(",").map(x=>x.trim()).filter(Boolean):t=="o"?JSON.parse(v):v;}});return o;}
+function hien(s){const r=JSON.parse(s),b=r.bang;delete r.bang;let t=(r.ok===false?"⚠ ":"")+(r.thong_diep||"")+"\n";
+ if(b)t+="\n"+b+"\n";const {thong_diep,ok,...con}=r;if(Object.keys(con).length)t+="\n"+JSON.stringify(con,null,1);$("kq").textContent=t;}
+function chay(ten,ts){try{hien(py.globals.get("goi")(ten,JSON.stringify(ts)))}catch(e){$("kq").textContent="Lỗi nhập liệu: "+e.message}}
+$("ct").onchange=ve;$("chay").onclick=()=>{try{chay($("ct").value,thamSo())}catch(e){$("kq").textContent="Lỗi nhập liệu: "+e.message}};
+$("tthai").onclick=()=>chay("lay_trang_thai",{});$("bang").onclick=()=>chay("bang_so_lieu",{});
+$("mo").onclick=()=>{try{$("tenbai").textContent=py.globals.get("mo")($("bai").value,$("hs").value);$("lam").hidden=false;$("kq").textContent="Bắt đầu từ pha 1: trả lời các câu vào lab (tra_loi_cau_vao).";}catch(e){alert("Mã học sinh chỉ gồm chữ/số/gạch (2–16 ký tự), không dùng tên thật.")}};
+khoi().catch(e=>$("tt").textContent="Không tải được: "+e);
+</script></body></html>
