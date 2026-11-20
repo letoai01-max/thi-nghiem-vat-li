@@ -1,0 +1,414 @@
+{
+ "phien_ban": 1,
+ "ma_bai": "bai_06",
+ "mo_hinh": "mang_nghieng_bi_thep",
+ "ten_bai": "Bài 6. Thực hành: Đo tốc độ của vật chuyển động",
+ "nguon": "SGK Vật lí 10 – Kết nối tri thức với cuộc sống, tr. 30–34 (kèm Bài 3, tr. 17–19 về sai số)",
+ "loai": "thuc_hanh",
+ "muc_tieu": [
+  {
+   "id": "mt1",
+   "noi_dung": "Sử dụng đồng hồ đo thời gian hiện số và cổng quang điện đo thời gian chuyển động chính xác đến phần nghìn giây."
+  },
+  {
+   "id": "mt2",
+   "noi_dung": "Thiết kế phương án và đo tốc độ trung bình của bi bằng hai cổng quang điện."
+  },
+  {
+   "id": "mt3",
+   "noi_dung": "Đo đường kính bi và thời gian chắn cổng để xác định tốc độ tức thời; xử lí sai số và rút ra nhận xét."
+  }
+ ],
+ "pha": [
+  {
+   "id": "vao_lab",
+   "ten": "Kiểm tra điều kiện vào lab",
+   "dieu_kien": [
+    "cau_vao_dat"
+   ]
+  },
+  {
+   "id": "chon_dung_cu_lap_rap",
+   "ten": "Chọn dụng cụ và lắp ráp",
+   "dieu_kien": [
+    "khai_bao:du_doan",
+    "khai_bao:bien_so",
+    "khai_bao:phuong_an",
+    "dung_cu_da_chon",
+    "lap_rap_dat"
+   ]
+  },
+  {
+   "id": "do_nhieu_lan",
+   "ten": "Đo đạc nhiều lần",
+   "dieu_kien": [
+    "do_du_lan"
+   ]
+  },
+  {
+   "id": "xu_ly_ket_luan",
+   "ten": "Xử lí số liệu và kết luận",
+   "dieu_kien": [
+    "ket_qua_dat",
+    "ket_luan_dat"
+   ]
+  }
+ ],
+ "cau_vao": [
+  {
+   "id": "v1",
+   "cau_hoi": "Tốc độ trung bình của một vật trên một đoạn đường được tính bằng công thức nào, đơn vị SI là gì?",
+   "nhom_tu_khoa": [
+    [
+     "quang duong",
+     "do dich chuyen",
+     "s/t",
+     "s :"
+    ],
+    [
+     "thoi gian",
+     "/t",
+     "chia t"
+    ],
+    [
+     "m/s",
+     "met tren giay"
+    ]
+   ]
+  },
+  {
+   "id": "v2",
+   "cau_hoi": "Vì sao phải đo nhiều lần cùng một đại lượng và tính sai số (Bài 3)?",
+   "nhom_tu_khoa": [
+    [
+     "ngau nhien",
+     "khac nhau",
+     "dao dong"
+    ],
+    [
+     "trung binh",
+     "sai so"
+    ]
+   ]
+  },
+  {
+   "id": "v3",
+   "cau_hoi": "Khi cắm cổng quang vào ổ cắm của đồng hồ, em cần chú ý điều gì?",
+   "nhom_tu_khoa": [
+    [
+     "khe dinh vi",
+     "dinh vi",
+     "thang",
+     "khong manh",
+     "khong lac"
+    ]
+   ]
+  }
+ ],
+ "an_toan": [
+  "Cắm giắc cổng quang thẳng vào ổ A/B, xoay đúng khe định vị; không cắm mạnh, không lắc chân cắm (SGK tr. 32).",
+  "Kết thúc thí nghiệm: tắt nguồn đồng hồ, tháo dụng cụ, sắp xếp ngăn nắp (SGK tr. 33)."
+ ],
+ "khai_bao": {
+  "du_doan": {
+   "cau_hoi": "Em dự đoán: (a) nếu dời cổng F xa vị trí thả hơn (giữ nguyên E) thì tốc độ trung bình của bi trên đoạn EF tăng, giảm hay không đổi? (b) tốc độ tức thời của bi tại F lớn hơn hay nhỏ hơn tốc độ trung bình trên EF? Giải thích ngắn gọn."
+  },
+  "bien_so": {
+   "cau_hoi": "Nêu: đại lượng đo trực tiếp, đại lượng tính gián tiếp, đại lượng em thay đổi và những yếu tố em phải giữ nguyên."
+  },
+  "phuong_an": {
+   "cau_hoi": "Mô tả phương án đo: dụng cụ nào đo đại lượng nào, bố trí hai cổng quang ra sao, đo mấy lần."
+  }
+ },
+ "do_dai_toi_thieu_tu": 8,
+ "dung_cu": {
+  "mc964": {
+   "ten": "Đồng hồ đo thời gian hiện số MC964 + cổng quang điện",
+   "loai": "do_thoi_gian",
+   "loai_do": "cong_quang",
+   "thang_do": {
+    "9.999": {
+     "do_chia_s": 0.001,
+     "toi_da_s": 9.999
+    },
+    "99.99": {
+     "do_chia_s": 0.01,
+     "toi_da_s": 99.99
+    }
+   },
+   "sigma_s": 0.0004
+  },
+  "dong_ho_bam_tay": {
+   "ten": "Đồng hồ bấm giây cầm tay",
+   "loai": "do_thoi_gian",
+   "loai_do": "tay",
+   "thang_do": {
+    "99.99": {
+     "do_chia_s": 0.01,
+     "toi_da_s": 99.99
+    }
+   },
+   "sigma_s": 0.15,
+   "ghi_chu_khi_chon": "Độ chia 0,01 s nhưng sai số thực tế bị chi phối bởi phản xạ của người bấm (cỡ vài phần mười giây)."
+  },
+  "thuoc_mm": {
+   "ten": "Thước thẳng ĐCNN 1 mm",
+   "loai": "do_chieu_dai",
+   "do_chia_m": 0.001,
+   "sigma_m": 0.0003,
+   "toi_da_m": 1.0
+  },
+  "thuoc_day_mem": {
+   "ten": "Thước dây mềm ĐCNN 5 mm",
+   "loai": "do_chieu_dai",
+   "do_chia_m": 0.005,
+   "sigma_m": 0.002,
+   "toi_da_m": 2.0,
+   "ghi_chu_khi_chon": "Thước dây mềm dễ võng, độ chia lớn: sai số khi đo đoạn ngắn sẽ đáng kể."
+  },
+  "thuoc_cap": {
+   "ten": "Thước cặp ĐCNN 0,02 mm",
+   "loai": "do_chieu_dai",
+   "do_chia_m": 2e-05,
+   "sigma_m": 1e-05,
+   "toi_da_m": 0.15
+  },
+  "can_dia": {
+   "ten": "Cân đĩa",
+   "loai": "khong_lien_quan",
+   "ghi_chu_khi_chon": "Cân đo khối lượng; đại lượng cần đo trong bài này là thời gian và độ dài."
+  },
+  "nhiet_ke": {
+   "ten": "Nhiệt kế",
+   "loai": "khong_lien_quan",
+   "ghi_chu_khi_chon": "Nhiệt kế không liên quan tới đại lượng cần đo trong bài này."
+  }
+ },
+ "dung_cu_can_co": {
+  "do_thoi_gian": 1,
+  "do_chieu_dai": 1
+ },
+ "tham_so_that": {
+  "gia_toc_m_s2": [
+   0.38,
+   0.55
+  ],
+  "duong_kinh_bi_m": [
+   0.015,
+   0.017
+  ],
+  "chieu_dai_mang_m": 0.9,
+  "sai_so_dat_cong_m": 0.0008
+ },
+ "lap_rap": {
+  "buoc": [
+   {
+    "id": "bo_tri_may",
+    "mo_ta": "Đặt máng nghiêng, vặn chân đế cân bằng, vặn chặt vít hãm"
+   },
+   {
+    "id": "noi_cong_quang_o_cam",
+    "mo_ta": "Nối cổng quang E, F vào ổ A, B ở mặt sau đồng hồ"
+   },
+   {
+    "id": "cam_nguon_bat_cong_tac",
+    "mo_ta": "Cắm nguồn đồng hồ và bật công tắc"
+   },
+   {
+    "id": "dat_mode_thang_do",
+    "mo_ta": "Chọn MODE và thang đo phù hợp"
+   },
+   {
+    "id": "dat_cong_quang",
+    "mo_ta": "Dịch chuyển, đặt cổng quang tại vị trí thích hợp và vặn chặt"
+   },
+   {
+    "id": "dat_bi_vao_nam_cham",
+    "mo_ta": "Đặt bi tại nam châm điện N"
+   },
+   {
+    "id": "nhan_reset",
+    "mo_ta": "Nhấn RESET để đưa số chỉ về 0.000"
+   }
+  ],
+  "bat_buoc": [
+   "bo_tri_may",
+   "noi_cong_quang_o_cam",
+   "cam_nguon_bat_cong_tac",
+   "dat_mode_thang_do",
+   "dat_cong_quang",
+   "dat_bi_vao_nam_cham"
+  ],
+  "thu_tu": [
+   [
+    "noi_cong_quang_o_cam",
+    "cam_nguon_bat_cong_tac"
+   ],
+   [
+    "cam_nguon_bat_cong_tac",
+    "dat_mode_thang_do"
+   ],
+   [
+    "dat_bi_vao_nam_cham",
+    "nhan_reset"
+   ]
+  ]
+ },
+ "yeu_cau_do": [
+  {
+   "thi_nghiem": "toc_do_trung_binh",
+   "so_cau_hinh_toi_thieu": 1,
+   "so_lan_t_toi_thieu": 3,
+   "do_dai": {
+    "muc": "quang_duong",
+    "so_lan_toi_thieu": 3
+   }
+  },
+  {
+   "thi_nghiem": "toc_do_tuc_thoi",
+   "so_cau_hinh_toi_thieu": 1,
+   "so_lan_t_toi_thieu": 3,
+   "do_dai": {
+    "muc": "duong_kinh",
+    "so_lan_toi_thieu": 5
+   }
+  }
+ ],
+ "goi_y": {
+  "phuong_an_toc_do_tb": [
+   "Định hướng nguyên lí: tốc độ trung bình trên một đoạn đường được xác định từ hai đại lượng nào? Trên đoạn từ E đến F em cần đo được những gì?",
+   "Gợi ý bố trí: quãng đường EF đo bằng dụng cụ độ dài nào? Khoảng thời gian bi đi từ cổng này đến cổng kia cần đồng hồ ở chế độ MODE nào? (xem mục II.1, tr. 30).",
+   "Ví dụ tương tự: đo tốc độ trung bình của xe đồ chơi chạy giữa hai vạch A và B trên sàn: đo AB bằng thước, đo thời gian từ lúc xe qua vạch A đến lúc qua vạch B. Hãy đối chiếu với bi và hai cổng E, F."
+  ],
+  "phuong_an_toc_do_tuc_thoi": [
+   "Tốc độ tức thời ứng với khoảng thời gian rất ngắn. Một vật có bề rộng d chắn cổng quang trong thời gian t thì em tính tốc độ bằng cách nào?",
+   "Cần hai đại lượng: bề rộng phần vật chắn cổng (với bi là đường kính) và thời gian chắn. Dụng cụ nào đo đường kính chính xác hơn thước thường? Khi chỉ dùng một cổng, MODE nào phù hợp?",
+   "Ví dụ: một đoàn tàu dài 100 m đi qua một cột mốc hết 5 s thì tốc độ lúc qua cột mốc xấp xỉ bao nhiêu? Hãy thay chiều dài đoàn tàu bằng đường kính bi."
+  ],
+  "nguon_sai_so": [
+   "Nhớ lại Bài 3: có hai loại sai số. Trong thí nghiệm này, nguồn nào theo em là hệ thống, nguồn nào là ngẫu nhiên?",
+   "Xét từng khâu: độ chia nhỏ nhất của thước và đồng hồ, việc đặt cổng quang, việc thả bi. Khâu nào lặp lại cho cùng kết quả, khâu nào mỗi lần một khác?",
+   "Ví dụ: cân một vật 5 lần được 20,1; 20,3; 20,2; 20,2; 20,1 g, nhưng cân luôn lệch +0,2 g. Phần nào là sai số ngẫu nhiên, phần nào là hệ thống?"
+  ],
+  "xu_ly_so_lieu": [
+   "Với các lần đo, em tính giá trị trung bình và sai số theo (3.1), (3.2) tr. 18; đại lượng tính gián tiếp (v = s/t) dùng quy tắc cộng sai số tỉ đối.",
+   "Các bước: (1) trung bình; (2) |trung bình − giá trị từng lần| rồi lấy trung bình; (3) cộng sai số dụng cụ = ĐCNN/2; (4) sai số tỉ đối của s và t, cộng lại cho v.",
+   "Ví dụ: đo chiều dài 3 lần được 12,0; 12,2; 11,8 cm, ĐCNN 0,1 cm: trung bình 12,0; sai số ngẫu nhiên TB ≈ 0,13; cộng 0,05 được ≈ 0,18, ghi 12,0 ± 0,2 cm. Em làm tương tự với số liệu của mình."
+  ]
+ },
+ "danh_gia_ket_qua": {
+  "dung_sai_phan_tram": 4.0,
+  "loai": {
+   "v_tb": "Tốc độ trung bình = s̄ / t̄ trên đoạn EF",
+   "v_tuc_thoi": "Tốc độ tức thời = d̄ / t̄ (từ Thí nghiệm 2)"
+  }
+ },
+ "ket_luan": [
+  {
+   "id": "y1",
+   "nhom_tu_khoa": [
+    [
+     "tang",
+     "lon hon",
+     "nhanh dan"
+    ]
+   ],
+   "cau_hoi_dan_dat": "Dựa vào số liệu của em, tốc độ của bi thay đổi thế nào khi bi lăn xa vị trí thả hơn? Số liệu nào cho thấy điều đó?"
+  },
+  {
+   "id": "y2",
+   "nhom_tu_khoa": [
+    [
+     "tuc thoi"
+    ],
+    [
+     "trung binh"
+    ],
+    [
+     "lon hon",
+     "nho hon",
+     "khac"
+    ]
+   ],
+   "cau_hoi_dan_dat": "So sánh tốc độ tức thời tại F với tốc độ trung bình trên EF của em: số nào lớn hơn, và vì sao như vậy?"
+  },
+  {
+   "id": "y3",
+   "nhom_tu_khoa": [
+    [
+     "sai so"
+    ],
+    [
+     "thoi gian",
+     "do chia",
+     "dat cong",
+     "thuoc",
+     "duong kinh",
+     "dong ho"
+    ]
+   ],
+   "cau_hoi_dan_dat": "Theo em, yếu tố nào làm sai số của tốc độ tức thời lớn nhất, và em giảm nó bằng cách nào?"
+  }
+ ],
+ "phan_bien": [
+  "Vì sao tốc độ tính từ đường kính bi và thời gian chắn cổng chỉ là xấp xỉ tốc độ tức thời?",
+  "Nếu dùng đồng hồ bấm tay thay cho cổng quang, sai số của phép đo thời gian thay đổi thế nào?",
+  "Đề xuất một phương án khác để đo tốc độ của bi (SGK gợi ý: quay video, cảm biến chuyển động)."
+ ],
+ "du_phong": {
+  "cau_hinh": [
+   {
+    "thi_nghiem": "toc_do_trung_binh",
+    "cau_hinh": {
+     "vi_tri_e_m": 0.2,
+     "vi_tri_f_m": 0.6,
+     "mode": "A->B",
+     "thang_do": "9.999",
+     "da_reset": true,
+     "dong_ho": "mc964"
+    },
+    "so_lan": 3
+   },
+   {
+    "thi_nghiem": "toc_do_tuc_thoi",
+    "cau_hinh": {
+     "vi_tri_cong_m": 0.6,
+     "mode": "A",
+     "o_cam_cong": "A",
+     "thang_do": "9.999",
+     "da_reset": true,
+     "dong_ho": "mc964"
+    },
+    "so_lan": 3
+   }
+  ],
+  "do_chieu_dai": [
+   {
+    "muc": "quang_duong",
+    "dung_cu": "thuoc_mm",
+    "cau_hinh_idx": 0,
+    "so_lan": 3
+   },
+   {
+    "muc": "duong_kinh",
+    "dung_cu": "thuoc_cap",
+    "cau_hinh_idx": 1,
+    "so_lan": 3
+   }
+  ]
+ },
+ "ghi_chu_gia_dinh": [
+  "Chiều dài máng 0,90 m, miền gia tốc 0,38–0,55 m/s², đường kính bi 15–17 mm, thang đo 9,999 s/99,99 s: ước lượng từ SGK, cần đối chiếu bộ thiết bị thật của trường.",
+  "Đo đường kính bi d: 5 lần (theo tài liệu tổng hợp 20/11); số lần đo thời gian tối thiểu 3 (tài liệu không nêu, giữ theo SGK)."
+ ],
+ "gia_thiet": [
+  "Bi thép coi như chất điểm khi lăn trên máng nghiêng; chuyển động của bi coi là nhanh dần đều.",
+  "Bỏ qua lăn không trượt và ma sát lăn (đủ cho mức lớp 10).",
+  "Hai cổng quang được coi là phát hiện bi tức thời tại vị trí đặt cổng."
+ ],
+ "gioi_han_mo_hinh": [
+  "Chưa mô phỏng sức cản không khí và sự rung của giá đỡ.",
+  "Sai số đồng hồ, sai số đặt cổng và độ phân giải thang đo có trong mô hình; các nguồn sai số khác chưa mô phỏng.",
+  "Số liệu là kết quả mô phỏng, không thay thế phép đo trên bộ thiết bị thật."
+ ]
+}
